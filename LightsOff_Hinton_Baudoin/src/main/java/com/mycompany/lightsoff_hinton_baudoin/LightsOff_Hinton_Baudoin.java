@@ -9,13 +9,10 @@ package com.mycompany.lightsoff_hinton_baudoin;
  *
  * @Créated by Mr Baudoin et Mr Hinton
  */
+//Définition de la main class du programme
 public class LightsOff_Hinton_Baudoin {
     public static void main(String[] args) {
-        PlateauDeJeu jeu = new PlateauDeJeu();
-        jeu.afficherGrilleSurConsole() ;
-        jeu.switchlight(0, 0);
-        jeu.switchlight(1, 0);
-        jeu.switchlight(4, 0);
-        jeu.afficherGrilleSurConsole() ;
+        Parties jeu = new Parties() ;               //Création d'un objet de classe "Parties"
+        jeu.lancer_Partie();                        //Utilisation d'une méthode de type "Parties" sur l'objet "jeu"
     }
 }

@@ -37,4 +37,15 @@ public class Parties {
         int colonne = sc2.nextInt();
         plateau.switchlight_all(ligne, colonne);
     } 
+    
+    /**
+     * Méthode permettant de lancer une partie
+     */
+    public void lancer_Partie(){
+        while (plateau.grille_gagnante() != true){
+            plateau.afficherGrilleSurConsole();
+            jouer_Cellule() ;
+        }
+        System.out.println("Gagné ! en " + coups_joues + " coups");
+    }
 }
