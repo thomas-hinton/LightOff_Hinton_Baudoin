@@ -47,10 +47,10 @@ public class CelluleDeGrille {
     public String toString() {      
         String chaine_a_retourner ;
         if (lumiere_allumee == true){            //Teste si la lumière est allumée ou éteinte
-            chaine_a_retourner = "true" ;
+            chaine_a_retourner = "O" ;          //Signifie ON
         }
         else{
-            chaine_a_retourner = "false" ;
+            chaine_a_retourner = "." ;          //Signifie OFF
         }
         return chaine_a_retourner ;
     }    

@@ -11,5 +11,11 @@ package com.mycompany.lightsoff_hinton_baudoin;
  */
 public class LightsOff_Hinton_Baudoin {
     public static void main(String[] args) {
+        PlateauDeJeu jeu = new PlateauDeJeu();
+        jeu.afficherGrilleSurConsole() ;
+        jeu.switchlight(0, 0);
+        jeu.switchlight(1, 0);
+        jeu.switchlight(4, 0);
+        jeu.afficherGrilleSurConsole() ;
     }
 }
